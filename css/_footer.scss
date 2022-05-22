@@ -1,0 +1,127 @@
+.footer {
+  &-top {
+    background-color: $clr-dark;
+    color: $clr-white-blur;
+    padding: 80px 0;
+  }
+  &-content {
+    overflow: hidden;
+    h2 {
+      font-size: 15px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        margin-bottom: 16px;
+
+        position: relative;
+        a {
+          display: block;
+          text-decoration: none;
+          color: $clr-white;
+          font-size: 14px;
+          line-height: 23px;
+          transition: $transition;
+
+          &:hover {
+            color: var(--main-color);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  &-bottom {
+    background-color: $clr-black;
+    color: $clr-white;
+    padding: 10px 0;
+    p {
+      margin: 0;
+    }
+  }
+  &-widget {
+    display: flex;
+    align-items: center;
+    ul {
+      padding: 0;
+      margin: 0 0 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      li {
+        &:hover a {
+          color: var(--main-color);
+        }
+        a {
+          transition: $transition;
+          display: block;
+          color: $clr-white;
+        }
+      }
+    }
+  }
+  .coppy-right {
+    text-align: center;
+  }
+}
+.newsletter-form {
+  .form-group {
+    height: 46px;
+    margin-bottom: 15px;
+    input.newsletter-input {
+      background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+      color: $clr-white;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 3px;
+      font-size: 13px;
+      text-align: left;
+      outline: none;
+      height: 100%;
+      width: 100%;
+      box-shadow: none;
+    }
+  }
+  &-btn {
+    display: block;
+    width: 100%;
+    padding: 7px 25px;
+
+    font-size: 16px;
+    font-weight: 900;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: none;
+    transition: $transition;
+    &:hover {
+      background-color: $clr-black !important;
+    }
+    span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      color: var(--main-color);
+      background-color: $clr-white;
+      margin-left: 5px;
+      i {
+        padding: 10px 5px;
+      }
+    }
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  .subcribed-text {
+    color: $clr-gray;
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 10px;
+  }
+}

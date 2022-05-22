@@ -1,0 +1,64 @@
+.preferential {
+  background: url(../assets/Preferential/fun-facts-bg.jpg) repeat scroll center
+    center;
+  object-fit: cover;
+  padding: 95px 0;
+  position: relative;
+  &-content {
+    background-color: var(--main-color);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  &-icon,
+  &-quantity {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  &-text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .preferential {
+    &-content {
+      width: 180px;
+      height: 180px;
+    }
+  }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .preferential {
+    &-content {
+      width: 150px;
+      height: 150px;
+    }
+    &-icon,
+    &-quantity {
+      font-size: 30px;
+      font-weight: 900;
+    }
+    &-text {
+      font-size: 13px;
+      line-height: 0;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .preferential {
+    &-content {
+      margin: 5px auto;
+    }
+  }
+}

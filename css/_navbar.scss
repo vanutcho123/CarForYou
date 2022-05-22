@@ -1,0 +1,98 @@
+.navbar {
+  &-home {
+    font-size: 13px;
+    color: $clr-white;
+    font-size: 13px;
+    line-height: 27px;
+    font-weight: 800;
+    white-space: nowrap;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: $transition;
+    &:hover {
+      color: var(--main-color);
+    }
+  }
+}
+.nav {
+  &-item {
+    padding: 10px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  &-link {
+    color: $clr-white !important;
+    font-size: 13px;
+    font-weight: 800;
+    transition: $transition;
+    &:hover {
+      color: var(--main-color) !important;
+    }
+  }
+}
+
+.dropdown-item {
+  color: $clr-white;
+  transition: $transition;
+}
+
+.dropdown-menu.show {
+  background: var(--main-color);
+}
+.dropdown-item:hover {
+  color: $clr-white;
+  background-color: $clr-black;
+}
+
+.navbar.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  animation: navbarSticky 0.5s ease-in-out;
+  transition: $transition;
+}
+
+@media (min-width: 992px) {
+  .nav {
+    &-item {
+      &:hover > .dropdown-menu {
+        display: block;
+        background-color: var(--main-color);
+        animation: translateY 0.3s ease-in-out, opacity 0.3s;
+      }
+    }
+    .dropdown-menu {
+      position: absolute;
+      display: none;
+      top: 100%;
+      left: 0;
+      padding-top: 0.125rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  // .nav {
+  //   &-item {
+  //     position: relative;
+  //     &:hover .dropdown-menu {
+  //       display: none;
+  //     }
+  //   }
+  // }
+  .dropdown-item {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .dropdown-menu {
+    position: relative;
+    display: none;
+  }
+}

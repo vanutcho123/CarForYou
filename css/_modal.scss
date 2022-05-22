@@ -1,0 +1,134 @@
+.modal {
+  .modal-dialog {
+    width: 650px;
+  }
+  &-title {
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+  }
+  &-content {
+    padding: 30px;
+  }
+  &-header {
+    padding: 15px 0;
+    margin-bottom: 10px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+    .form-control {
+      background: $clr-white-blur none repeat scroll 0 0;
+      border: 0 none;
+      border-radius: 3px;
+      box-shadow: none;
+      color: $clr-input-modal;
+      font-size: 15px;
+      height: 46px;
+      line-height: 30px;
+      padding: 0 15px;
+    }
+    .login-btn,
+    .signup-btn,
+    .reset-btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 900;
+    }
+  }
+  .checkbox {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    margin: 0 0 15px 10px;
+    gap: 15px;
+    label {
+      color: $clr-dark;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    input[type="checkbox"] {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin: -2px 10px 0 0;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+  }
+  .gray-text {
+    font-size: 18px;
+    font-weight: 900;
+    color: $clr-gray;
+    margin-bottom: 15px;
+    p {
+      font-weight: 400;
+      font-size: 15px;
+    }
+  }
+  .btn.facebook-btn,
+  .btn.twitter-btn,
+  .btn.google-btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    i {
+      font-size: 26px;
+      margin-right: 10px;
+    }
+  }
+  &-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+    gap: 20px;
+    p {
+      color: $clr-black;
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--main-color);
+        margin-left: 5px;
+        transition: $transition;
+        &:hover {
+          color: $clr-black;
+        }
+      }
+    }
+  }
+  .btn-close {
+    background-color: var(--main-color);
+    opacity: 1;
+    position: relative;
+    &:hover {
+      animation: rotate 0.3s linear;
+      border: none;
+      opacity: 0.8;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .modal {
+    &-dialog {
+      max-width: 90%;
+      margin: 20px auto;
+    }
+    .btn.facebook-btn,
+    .btn.twitter-btn,
+    .btn.google-btn {
+      justify-content: center;
+    }
+  }
+}

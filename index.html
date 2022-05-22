@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarForYou-Find Your Dream Car</title>
+    <!-- Link favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <!-- Link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- carousel 2  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link css-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- switches color -->
+      <div class="switcher">
+        <div class="switcher-container">
+          <div class="switcher-btn">
+            <i class="fas fa-cog"></i>
+          </div>
+          <div class="switcher-theme">
+            <h6>color</h6>
+            <span
+              class="switcher-theme-buttons"
+              data-color="#fa2837"
+              style="background: #fa2837"
+            ></span>
+            <span
+              class="switcher-theme-buttons"
+              data-color="#f76d2b"
+              style="background: #f76d2b"
+            ></span>
+            <span
+              class="switcher-theme-buttons"
+              data-color="#228dcb"
+              style="background: #228dcb"
+            ></span
+            ><span
+              class="switcher-theme-buttons"
+              data-color="#ff2761"
+              style="background: #ff2761"
+            ></span
+            ><span
+              class="switcher-theme-buttons"
+              data-color="#2dcc70"
+              style="background: #2dcc70"
+            ></span
+            ><span
+              class="switcher-theme-buttons"
+              data-color="#6054c2"
+              style="background: #6054c2"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <!-- header -->
+      <header class="header" id="header">
+        <div class="header-default">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3 col-md-2 col-3">
+                <div class="header-logo">
+                  <a href="./index.html">
+                    <img src="./assets/logo.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-9 col-md-10 col-9">
+                <div class="header-info">
+                  <div class="header-contact">
+                    <div class="header-contact-icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="header-contact-text">
+                      <p>For Support Mail us :</p>
+                      <a href="#">hainguyen.061001@gmail.com</a>
+                    </div>
+                  </div>
+
+                  <div class="header-contact">
+                    <div class="header-contact-icon">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="header-contact-text">
+                      <p>Service Helpline Call Us:</p>
+                      <a href="#">+84-8674-0550-3</a>
+                    </div>
+                  </div>
+                  <div class="header-socials">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          ><i class="fa-brands fa-facebook-square"></i
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                      </li>
+
+                      <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-btn">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#loginform"
+                    >
+                      LOGIN/REGISTER
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+          <div class="container">
+            <a class="navbar-home" href="#">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    About us
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">About us 1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">About us 1</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Inventory
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Inventory1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Inventory2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Inventory3</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dealers
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Pages-1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Pages-2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Pages-3</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Pages-4</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Pages-5</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    News
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">News-1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">News-2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">News-3</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">News-4</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- main -->
+      <main>
+        <!-- banner -->
+        <section class="banner" id="banner">
+          <div class="banner-container">
+            <div class="owl-carousel owl-theme">
+              <div class="banner-item">
+                <div class="banner-img">
+                  <img src="./assets/banner-image.jpg" alt="banner 1" />
+                </div>
+                <div class="banner-content">
+                  <h1 class="banner-title">FIND THE RIGHT CAR FOR YOU.</h1>
+                  <p>We have more than a thousand cars for you to choose.</p>
+                  <a href="#" class="btn btn-primary banner-btn"
+                    >Read More
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="banner-item">
+                <div class="banner-img">
+                  <img src="./assets/banner-image.jpg" alt="banner 1" />
+                </div>
+                <div class="banner-content">
+                  <h1 class="banner-title">FIND THE RIGHT CAR FOR YOU.</h1>
+                  <p>We have more than a thousand cars for you to choose.</p>
+                  <a href="#" class="btn btn-primary banner-btn"
+                    >Read More
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="banner-item">
+                <div class="banner-img">
+                  <img src="./assets/banner-image.jpg" alt="banner 1" />
+                </div>
+                <div class="banner-content">
+                  <h1 class="banner-title">FIND THE RIGHT CAR FOR YOU.</h1>
+                  <p>We have more than a thousand cars for you to choose.</p>
+                  <a href="#" class="btn btn-primary banner-btn"
+                    >Read More
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- filter -->
+        <section class="filter" id="filter">
+          <div class="container">
+            <h3 class="filter-heading">
+              Find Your Dream Car
+              <span>(Easy search from here)</span>
+            </h3>
+            <form action="#" method="get">
+              <div class="row">
+                <!-- 1 -->
+                <div class="form-group col-md-3 col-sm-6">
+                  <div class="select">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      required
+                    >
+                      <option value>Select Location</option>
+                      <option value>Location 1</option>
+                      <option value>Location 2</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="form-group col-md-3 col-sm-6">
+                  <div class="select">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      required
+                    >
+                      <option value>Select Brand</option>
+                      <option value>Audi</option>
+                      <option value>BMW</option>
+                      <option value>Nissan</option>
+                      <option value>Toyota</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="form-group col-md-3 col-sm-6">
+                  <div class="select">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      required
+                    >
+                      <option value>Select Model</option>
+                      <option value="#">Series 1</option>
+                      <option value="#">Series 2</option>
+                      <option value="#">Series 3</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="form-group col-md-3 col-sm-6">
+                  <div class="select">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      required
+                    >
+                      <option value>Year of Model</option>
+                      <option value="#">2016</option>
+                      <option value="#">2015</option>
+                      <option value="#">2014</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- 5 -->
+                <div class="form-group col-md-6 col-sm-6">
+                  <label class="form-label">Price Range ($)</label>
+                  <div class="price-input">
+                    <div class="field">
+                      <span>Min</span>
+                      <input type="number" class="input-min" value="2500" />
+                    </div>
+                    <div class="separator">-</div>
+                    <div class="field">
+                      <span>Max</span>
+                      <input type="number" class="input-max" value="7500" />
+                    </div>
+                  </div>
+                  <div class="slider">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="range-input">
+                    <input
+                      type="range"
+                      class="range-min"
+                      min="0"
+                      max="10000"
+                      value="2500"
+                      step="100"
+                    />
+                    <input
+                      type="range"
+                      class="range-max"
+                      min="0"
+                      max="10000"
+                      value="7500"
+                      step="100"
+                    />
+                  </div>
+                </div>
+                <!-- 6 -->
+                <div class="form-group col-md-3 col-sm-6">
+                  <div class="select">
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                      required
+                    >
+                      <option value="">Type of Car</option>
+                      <option value="#">New Car</option>
+                      <option value="#">Used Car</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group col-md-3 col-sm-6">
+                  <button type="submit" class="btn btn-primary filter-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search Car
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- end filter -->
+        <!-- about -->
+        <section class="about section-padding">
+          <div class="container">
+            <div class="section-header text-center">
+              <h2>Welcome <span>to CarForYou</span></h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or random words which don't look even slightly
+                believable. If you are going to use a passage of Lorem Ipsum,
+                you need to be sure there isn't anything embarrassing hidden in
+                the middle of text.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <div class="about-item">
+                  <div class="about-img">
+                    <img src="./assets/car/looking-used-car.png" alt="" />
+                  </div>
+                  <div class="about-content">
+                    <h3>Looking <span>Used Car?</span></h3>
+                    <p>
+                      At vero eos et accusamus et iusto odio dignissimos ducimus
+                      qui blanditiis praesentium voluptatum deleniti atque.
+                    </p>
+                    <a href="#" class="btn btn-primary about-btn"
+                      >View Listing <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6">
+                <div class="about-item">
+                  <div class="about-img">
+                    <img src="./assets/car/looking-new-car.png" alt="" />
+                  </div>
+                  <div class="about-content">
+                    <h3>Looking <span>Used Car?</span></h3>
+                    <p>
+                      At vero eos et accusamus et iusto odio dignissimos ducimus
+                      qui blanditiis praesentium voluptatum deleniti atque.
+                    </p>
+                    <a href="#" class="btn btn-primary about-btn"
+                      >View Listing <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- gallery -->
+        <section class="gallery section-padding">
+          <div class="container">
+            <div class="section-header text-center">
+              <h2>Find the Best <span>CarForYou</span></h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text.
+              </p>
+            </div>
+
+            <div class="row gallery-main">
+              <div class="gallery-tab">
+                <ul class="gallery-tab-list">
+                  <li class="gallery-tab-item">
+                    <a
+                      href="#"
+                      class="gallery-tab-link tab-active"
+                      data-id="newcar"
+                      >New Car</a
+                    >
+                  </li>
+                  <li class="gallery-tab-item">
+                    <a href="#" class="gallery-tab-link" data-id="usercar"
+                      >User Car</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="gallery-content active" id="newcar">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="car">
+                      <div class="car-info">
+                        <a href="#" class="car-img">
+                          <img src="./assets/gallery/recent-car-1.jpg" alt="" />
+                        </a>
+                        <div class="car-compare">
+                          <input type="checkbox" name="compare" id="compare" />
+                          <label>compare</label>
+                        </div>
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-road"></i>
+                            20,000 km
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            2005 Model
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colorado, USA
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="car-name">
+                        <h6>Ford Shelby GT350</h6>
+                        <span class="car-price">$45,000</span>
+                      </div>
+                      <div class="car-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="car">
+                      <div class="car-info">
+                        <a href="#" class="car-img">
+                          <img src="./assets/gallery/recent-car-2.jpg" alt="" />
+                        </a>
+                        <div class="car-compare">
+                          <input type="checkbox" name="compare" id="compare" />
+                          <label>compare</label>
+                        </div>
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-road"></i>
+                            20,000 km
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            2005 Model
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colorado, USA
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="car-name">
+                        <h6>BMW 535i</h6>
+                        <span class="car-price">$20,000</span>
+                      </div>
+                      <div class="car-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="car">
+                      <div class="car-info">
+                        <a href="#" class="car-img">
+                          <img src="./assets/gallery/recent-car-3.jpg" alt="" />
+                        </a>
+                        <div class="car-compare">
+                          <input type="checkbox" name="compare" id="compare" />
+                          <label>compare</label>
+                        </div>
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-road"></i>
+                            20,000 km
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            2005 Model
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colorado, USA
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="car-name">
+                        <h6>Volvo v40</h6>
+                        <span class="car-price">$60,000</span>
+                      </div>
+                      <div class="car-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="car">
+                      <div class="car-info">
+                        <a href="#" class="car-img">
+                          <img src="./assets/gallery/recent-car-4.jpg" alt="" />
+                        </a>
+                        <div class="car-compare">
+                          <input type="checkbox" name="compare" id="compare" />
+                          <label>compare</label>
+                        </div>
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-road"></i>
+                            20,000 km
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            2005 Model
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colorado, USA
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="car-name">
+                        <h6>Audi TT RS</h6>
+                        <span class="car-price">$90,000</span>
+                      </div>
+                      <div class="car-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="car">
+                      <div class="car-info">
+                        <a href="#" class="car-img">
+                          <img src="./assets/gallery/recent-car-5.jpg" alt="" />
+                        </a>
+                        <div class="car-compare">
+                          <input type="checkbox" name="compare" id="compare" />
+                          <label>compare</label>
+                        </div>
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-road"></i>
+                            20,000 km
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            2005 Model
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colorado, USA
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="car-name">
+                        <h6>Audi A3</h6>
+                        <span class="car-price">$49,000</span>
+                      </div>
+                      <div class="car-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="car">
+                      <div class="car-info">
+                        <a href="#" class="car-img">
+                          <img src="./assets/gallery/recent-car-6.jpg" alt="" />
+                        </a>
+                        <div class="car-compare">
+                          <input type="checkbox" name="compare" id="compare" />
+                          <label>compare</label>
+                        </div>
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-road"></i>
+                            20,000 km
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            2005 Model
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colorado, USA
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="car-name">
+                        <h6>BMW 535i</h6>
+                        <span class="car-price">$20,000</span>
+                      </div>
+                      <div class="car-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gallery-content" id="usercar">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="car">
+                      <div class="car-info">
+                        <a href="#" class="car-img">
+                          <img src="./assets/gallery/recent-car-4.jpg" alt="" />
+                        </a>
+                        <div class="car-compare">
+                          <input type="checkbox" name="compare" id="compare" />
+                          <label>compare</label>
+                        </div>
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-road"></i>
+                            20,000 km
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            2005 Model
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colorado, USA
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="car-name">
+                        <h6>Ford Shelby GT350</h6>
+                        <span class="car-price">$45,000</span>
+                      </div>
+                      <div class="car-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="car">
+                      <div class="car-info">
+                        <a href="#" class="car-img">
+                          <img src="./assets/gallery/recent-car-5.jpg" alt="" />
+                        </a>
+                        <div class="car-compare">
+                          <input type="checkbox" name="compare" id="compare" />
+                          <label>compare</label>
+                        </div>
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-road"></i>
+                            20,000 km
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            2005 Model
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colorado, USA
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="car-name">
+                        <h6>BMW 535i</h6>
+                        <span class="car-price">$20,000</span>
+                      </div>
+                      <div class="car-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="car">
+                      <div class="car-info">
+                        <a href="#" class="car-img">
+                          <img src="./assets/gallery/recent-car-6.jpg" alt="" />
+                        </a>
+                        <div class="car-compare">
+                          <input type="checkbox" name="compare" id="compare" />
+                          <label>compare</label>
+                        </div>
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-road"></i>
+                            20,000 km
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            2005 Model
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colorado, USA
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="car-name">
+                        <h6>Volvo v40</h6>
+                        <span class="car-price">$60,000</span>
+                      </div>
+                      <div class="car-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="car">
+                      <div class="car-info">
+                        <a href="#" class="car-img">
+                          <img src="./assets/gallery/recent-car-1.jpg" alt="" />
+                        </a>
+                        <div class="car-compare">
+                          <input type="checkbox" name="compare" id="compare" />
+                          <label>compare</label>
+                        </div>
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-road"></i>
+                            20,000 km
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            2005 Model
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colorado, USA
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="car-name">
+                        <h6>Audi TT RS</h6>
+                        <span class="car-price">$90,000</span>
+                      </div>
+                      <div class="car-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="car">
+                      <div class="car-info">
+                        <a href="#" class="car-img">
+                          <img src="./assets/gallery/recent-car-2.jpg" alt="" />
+                        </a>
+                        <div class="car-compare">
+                          <input type="checkbox" name="compare" id="compare" />
+                          <label>compare</label>
+                        </div>
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-road"></i>
+                            20,000 km
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            2005 Model
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colorado, USA
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="car-name">
+                        <h6>Audi A3</h6>
+                        <span class="car-price">$49,000</span>
+                      </div>
+                      <div class="car-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="car">
+                      <div class="car-info">
+                        <a href="#" class="car-img">
+                          <img src="./assets/gallery/recent-car-3.jpg" alt="" />
+                        </a>
+                        <div class="car-compare">
+                          <input type="checkbox" name="compare" id="compare" />
+                          <label>compare</label>
+                        </div>
+                        <ul>
+                          <li>
+                            <i class="fa-solid fa-road"></i>
+                            20,000 km
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            2005 Model
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colorado, USA
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="car-name">
+                        <h6>BMW 535i</h6>
+                        <span class="car-price">$20,000</span>
+                      </div>
+                      <div class="car-desc">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Preferential -->
+        <section class="preferential">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-xs-6 col-sm-3">
+                <div class="preferential-content">
+                  <div class="preferential-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                  </div>
+                  <span class="preferential-quantity"> 40+ </span>
+                  <p class="preferential-text">Years In Business</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-xs-6 col-sm-3">
+                <div class="preferential-content">
+                  <div class="preferential-icon">
+                    <i class="fa-solid fa-car"></i>
+                  </div>
+                  <span class="preferential-quantity"> 1200+ </span>
+                  <p class="preferential-text">New Cars For Sale</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-xs-6 col-sm-3">
+                <div class="preferential-content">
+                  <div class="preferential-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                  <span class="preferential-quantity"> 1000+ </span>
+                  <p class="preferential-text">Used Cars For Sale</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-xs-6 col-sm-3">
+                <div class="preferential-content">
+                  <div class="preferential-icon">
+                    <i class="fa-solid fa-circle-user"></i>
+                  </div>
+                  <span class="preferential-quantity"> 1234+ </span>
+                  <p class="preferential-text">Satisfied Customers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dark-overlay"></div>
+        </section>
+        <!-- featured -->
+        <section class="featured section-padding">
+          <div class="container">
+            <div class="section-header text-center">
+              <h2>Featured Cars <span>Special Offers</span></h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text.
+              </p>
+            </div>
+            <div class="featured-main">
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="featured-car">
+                    <div class="featured-info">
+                      <div class="featured-img">
+                        <img
+                          src="./assets/featured/featured-img-01.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="car-compare">
+                        <input type="checkbox" name="featured" id="featured" />
+                        <label>compare</label>
+                      </div>
+                      <div class="label-icon">New</div>
+                    </div>
+                    <div class="featured-content">
+                      <h2 class="featured-name">Maserati QUATTROPORTE 1,6</h2>
+                      <div class="flex-row">
+                        <span class="featured-price">$90,000</span>
+                        <div class="featured-address">
+                          <i class="fa fa-map-marker"></i>
+                          <span>Colorado, USA</span>
+                        </div>
+                      </div>
+                      <ul>
+                        <li>
+                          <i class="fa fa-road"></i>
+                          0,000 km
+                        </li>
+                        <li>
+                          <i class="fa fa-tachometer"></i>
+                          30.000 miles
+                        </li>
+                        <li>
+                          <i class="fa fa-calendar"></i>
+                          2005 model
+                        </li>
+                        <li>
+                          <i class="fa fa-car"></i>
+                          Diesel
+                        </li>
+                        <li>
+                          <i class="fa fa-user"></i>
+                          5 seats
+                        </li>
+                        <li>
+                          <i class="fa fa-superpowers"></i>
+                          143 kW
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="featured-car">
+                    <div class="featured-info">
+                      <div class="featured-img">
+                        <img
+                          src="./assets/featured/featured-img-02.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="car-compare">
+                        <input type="checkbox" name="featured" id="featured" />
+                        <label>compare</label>
+                      </div>
+                      <div class="label-icon">New</div>
+                    </div>
+                    <div class="featured-content">
+                      <h2 class="featured-name">
+                        Mazda CX-5 SX, V6, ABS, Sunroof
+                      </h2>
+                      <div class="flex-row">
+                        <span class="featured-price">$90,000</span>
+                        <div class="featured-address">
+                          <i class="fa fa-map-marker"></i>
+                          <span>Colorado, USA</span>
+                        </div>
+                      </div>
+                      <ul>
+                        <li>
+                          <i class="fa fa-road"></i>
+                          0,000 km
+                        </li>
+                        <li>
+                          <i class="fa fa-tachometer"></i>
+                          30.000 miles
+                        </li>
+                        <li>
+                          <i class="fa fa-calendar"></i>
+                          2005 model
+                        </li>
+                        <li>
+                          <i class="fa fa-car"></i>
+                          Diesel
+                        </li>
+                        <li>
+                          <i class="fa fa-user"></i>
+                          5 seats
+                        </li>
+                        <li>
+                          <i class="fa fa-superpowers"></i>
+                          143 kW
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="featured-car">
+                    <div class="featured-info">
+                      <div class="featured-img">
+                        <img
+                          src="./assets/featured/featured-img-03.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="car-compare">
+                        <input type="checkbox" name="featured" id="featured" />
+                        <label>compare</label>
+                      </div>
+                      <div class="label-icon">Used</div>
+                    </div>
+                    <div class="featured-content">
+                      <h2 class="featured-name">BMW 535i</h2>
+                      <div class="flex-row">
+                        <span class="featured-price">$90,000</span>
+                        <div class="featured-address">
+                          <i class="fa fa-map-marker"></i>
+                          <span>Colorado, USA</span>
+                        </div>
+                      </div>
+                      <ul>
+                        <li>
+                          <i class="fa fa-road"></i>
+                          0,000 km
+                        </li>
+                        <li>
+                          <i class="fa fa-tachometer"></i>
+                          30.000 miles
+                        </li>
+                        <li>
+                          <i class="fa fa-calendar"></i>
+                          2005 model
+                        </li>
+                        <li>
+                          <i class="fa fa-car"></i>
+                          Diesel
+                        </li>
+                        <li>
+                          <i class="fa fa-user"></i>
+                          5 seats
+                        </li>
+                        <li>
+                          <i class="fa fa-superpowers"></i>
+                          143 kW
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- trending -->
+        <section class="trending section-padding">
+          <div class="container">
+            <div class="section-header text-center">
+              <h2>Trending <span>Cars of the Year</span></h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text.
+              </p>
+            </div>
+            <div class="trending-main">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="owl-carousel owl-theme second">
+                    <div class="trending-item">
+                      <div class="trending-img">
+                        <img
+                          src="./assets/trending/trending-car-img-1.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="bg-dark">
+                        <h2>LAMBORGHINI</h2>
+                      </div>
+                    </div>
+
+                    <div class="trending-item">
+                      <div class="trending-img">
+                        <img
+                          src="./assets/trending/trending-car-img-2.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="bg-dark">
+                        <h2>LAMBORGHINI</h2>
+                      </div>
+                    </div>
+                    <div class="trending-item">
+                      <div class="trending-img">
+                        <img
+                          src="./assets/trending/trending-car-img-3.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="bg-dark">
+                        <h2>LAMBORGHINI</h2>
+                      </div>
+                    </div>
+                    <div class="trending-item">
+                      <div class="trending-img">
+                        <img
+                          src="./assets/trending/trending-car-img-1.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="bg-dark">
+                        <h2>LAMBORGHINI</h2>
+                      </div>
+                    </div>
+
+                    <div class="trending-item">
+                      <div class="trending-img">
+                        <img
+                          src="./assets/trending/trending-car-img-2.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="bg-dark">
+                        <h2>LAMBORGHINI</h2>
+                      </div>
+                    </div>
+                    <div class="trending-item">
+                      <div class="trending-img">
+                        <img
+                          src="./assets/trending/trending-car-img-3.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="bg-dark">
+                        <h2>LAMBORGHINI</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- testimonial -->
+        <section class="testimonial section-padding">
+          <div class="container">
+            <div class="section-header text-center">
+              <h2>Our Satisfied <span>Customers</span></h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text.
+              </p>
+            </div>
+            <div class="testimonial-main">
+              <div class="row">
+                <div class="owl-carousel owl-theme">
+                  <div class="testimonial-item">
+                    <div class="testimonial-img">
+                      <img src="./assets/testimonial/hooiji an.jpg" alt="" />
+                    </div>
+                    <div class="testimonial-content">
+                      <div class="testimonial-heading">
+                        <h2>Van Hai</h2>
+                        <span>CEO of xyz company</span>
+                      </div>
+                      <p class="testimonial-text">
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti quos dolores et quas molestias excepturi
+                        sint occaecati cupiditate non provident, similique sunt
+                        .
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="testimonial-item">
+                    <div class="testimonial-img">
+                      <img src="./assets/testimonial/hooiji an.jpg" alt="" />
+                    </div>
+                    <div class="testimonial-content">
+                      <div class="testimonial-heading">
+                        <h2>Van Hai</h2>
+                        <span>CEO of xyz company</span>
+                      </div>
+                      <p class="testimonial-text">
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti quos dolores et quas molestias excepturi
+                        sint occaecati cupiditate non provident, similique sunt
+                        .
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="testimonial-item">
+                    <div class="testimonial-img">
+                      <img src="./assets/testimonial/hooiji an.jpg" alt="" />
+                    </div>
+                    <div class="testimonial-content">
+                      <div class="testimonial-heading">
+                        <h2>Van Hai</h2>
+                        <span>CEO of xyz company</span>
+                      </div>
+                      <p class="testimonial-text">
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti quos dolores et quas molestias excepturi
+                        sint occaecati cupiditate non provident, similique sunt
+                        .
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="testimonial-item">
+                    <div class="testimonial-img">
+                      <img src="./assets/testimonial/hooiji an.jpg" alt="" />
+                    </div>
+                    <div class="testimonial-content">
+                      <div class="testimonial-heading">
+                        <h2>Van Hai</h2>
+                        <span>CEO of xyz company</span>
+                      </div>
+                      <p class="testimonial-text">
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti quos dolores et quas molestias excepturi
+                        sint occaecati cupiditate non provident, similique sunt
+                        .
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="testimonial-item">
+                    <div class="testimonial-img">
+                      <img src="./assets/testimonial/hooiji an.jpg" alt="" />
+                    </div>
+                    <div class="testimonial-content">
+                      <div class="testimonial-heading">
+                        <h2>Van Hai</h2>
+                        <span>CEO of xyz company</span>
+                      </div>
+                      <p class="testimonial-text">
+                        At vero eos et accusamus et iusto odio dignissimos
+                        ducimus qui blanditiis praesentium voluptatum deleniti
+                        atque corrupti quos dolores et quas molestias excepturi
+                        sint occaecati cupiditate non provident, similique sunt
+                        .
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dark-overlay"></div>
+        </section>
+        <!-- blog -->
+        <section class="blog section-padding">
+          <div class="container">
+            <div class="section-header text-center">
+              <h2>Latest Updates In <span>Automobile Industry</span></h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text.
+              </p>
+            </div>
+            <div class="blog-main">
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="blog-card">
+                    <div class="blog-info">
+                      <div class="blog-img">
+                        <img src="./assets/blog/blog_img1.jpg" alt="" />
+                      </div>
+                      <div class="blog-share">
+                        <span>
+                          <i class="fa-solid fa-share-nodes"></i>
+                          <ul>
+                            <li>
+                              <i class="fa-brands fa-facebook-f"></i>
+                            </li>
+                            <li>
+                              <i class="fa-brands fa-twitter"></i>
+                            </li>
+                            <li>
+                              <i class="fa-brands fa-linkedin-in"></i>
+                            </li>
+                          </ul>
+                        </span>
+                      </div>
+                      <ul class="blog-review">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-tags"></i>
+                            Latest Cars
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-calendar"></i>
+                            11 May 2022
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-comment-o"></i>
+                            Commentss
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="blog-content">
+                      <h2 class="blog-title">
+                        But I must explain to you how all this mistaken idea.
+                      </h2>
+                      <p class="blog-text">
+                        Expound the actual teachings of the great explorer of
+                        the truth, the master-builder of human happiness. No one
+                        rejects, dislikes, or avoids pleasure itself, because
+                      </p>
+                      <a href="#" class="blog-btn">
+                        Read More
+                        <i class="fa fa-long-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="blog-card">
+                    <div class="blog-info">
+                      <div class="blog-img">
+                        <img src="./assets/blog/blog_img2.jpg" alt="" />
+                      </div>
+                      <div class="blog-share">
+                        <span>
+                          <i class="fa-solid fa-share-nodes"></i>
+                          <ul>
+                            <li>
+                              <i class="fa-brands fa-facebook-f"></i>
+                            </li>
+                            <li>
+                              <i class="fa-brands fa-twitter"></i>
+                            </li>
+                            <li>
+                              <i class="fa-brands fa-linkedin-in"></i>
+                            </li>
+                          </ul>
+                        </span>
+                      </div>
+                      <ul class="blog-review">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-tags"></i>
+                            Latest Cars
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-calendar"></i>
+                            11 May 2022
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-comment-o"></i>
+                            Commentss
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="blog-content">
+                      <h2 class="blog-title">
+                        On the other hand, we denounce with righteous
+                        indignation.
+                      </h2>
+                      <p class="blog-text">
+                        Expound the actual teachings of the great explorer of
+                        the truth, the master-builder of human happiness. No one
+                        rejects, dislikes, or avoids pleasure itself, because
+                      </p>
+                      <a href="#" class="blog-btn">
+                        Read More
+                        <i class="fa fa-long-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="blog-card">
+                    <div class="blog-info">
+                      <div class="blog-img">
+                        <img src="./assets/blog/blog_img3.jpg" alt="" />
+                      </div>
+                      <div class="blog-share">
+                        <span>
+                          <i class="fa-solid fa-share-nodes"></i>
+                          <ul>
+                            <li>
+                              <i class="fa-brands fa-facebook-f"></i>
+                            </li>
+                            <li>
+                              <i class="fa-brands fa-twitter"></i>
+                            </li>
+                            <li>
+                              <i class="fa-brands fa-linkedin-in"></i>
+                            </li>
+                          </ul>
+                        </span>
+                      </div>
+                      <ul class="blog-review">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-tags"></i>
+                            Latest Cars
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-calendar"></i>
+                            11 May 2022
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-comment-o"></i>
+                            Commentss
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="blog-content">
+                      <h2 class="blog-title">
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem.
+                      </h2>
+                      <p class="blog-text">
+                        Expound the actual teachings of the great explorer of
+                        the truth, the master-builder of human happiness. No one
+                        rejects, dislikes, or avoids pleasure itself, because
+                      </p>
+                      <a href="#" class="blog-btn">
+                        Read More
+                        <i class="fa fa-long-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-6">
+                <div class="footer-content">
+                  <h2>TOP CATEGORES</h2>
+                  <ul>
+                    <li>
+                      <a href="#"> Crossovers </a>
+                    </li>
+                    <li>
+                      <a href="#"> Hybrids </a>
+                    </li>
+                    <li>
+                      <a href="#"> Hybrid Cars </a>
+                    </li>
+                    <li>
+                      <a href="#"> Hybrid SUVs </a>
+                    </li>
+                    <li>
+                      <a href="#"> Concept Vehicles </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <div class="footer-content">
+                  <h2>ABOUT US</h2>
+                  <ul>
+                    <li>
+                      <a href="#"> Privacy </a>
+                    </li>
+                    <li>
+                      <a href="#"> Hybrid Cars </a>
+                    </li>
+                    <li>
+                      <a href="#"> Cookies </a>
+                    </li>
+                    <li>
+                      <a href="#"> Trademarks </a>
+                    </li>
+                    <li>
+                      <a href="#"> Terms of use </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <div class="footer-content">
+                  <h2>Useful Links</h2>
+                  <ul>
+                    <li>
+                      <a href="#"> Our Partners </a>
+                    </li>
+                    <li>
+                      <a href="#"> Careers </a>
+                    </li>
+                    <li>
+                      <a href="#"> Sitemap </a>
+                    </li>
+                    <li>
+                      <a href="#"> Investors </a>
+                    </li>
+                    <li>
+                      <a href="#"> Request a Quote </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-6">
+                <div class="footer-content">
+                  <h2>SUBSCRIBE NEWSLETTER</h2>
+                  <div class="newsletter-form">
+                    <form action="#">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          placeholder="Enter email address"
+                          class="form-control newsletter-input"
+                          required
+                        />
+                      </div>
+                      <button class="btn btn-primary newsletter-form-btn">
+                        Subscribe
+                        <span>
+                          <i class="fa fa-angle-right"></i>
+                        </span>
+                      </button>
+                    </form>
+                    <p class="subcribed-text">
+                      *We send great deals and latest auto news to our
+                      subscribed users every week.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="coppy-right">
+                  Copyright © 2022 Nguyễn Văn Hải. All Rights Reserved
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="flex-row">
+                  <div class="footer-widget">
+                    <p>Download Our APP:</p>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-android"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-apple"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer-widget">
+                    <p>Connect with Us:</p>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-instagram-square"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- back to top -->
+      <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+      </div>
+      <!-- Modal login form -->
+      <div class="modal fade" id="loginform">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="login-wrap">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <form action="#">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Username or Email address*"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Password*"
+                          required
+                        />
+                      </div>
+                      <div class="form-group checkbox">
+                        <input type="checkbox" required />
+                        <label>Remember Me</label>
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="submit"
+                          value="Login"
+                          class="btn btn-primary login-btn"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <h6 class="gray-text">Login The Quick Way</h6>
+                    <a href="#" class="btn btn-primary facebook-btn"
+                      ><i class="fa-brands fa-facebook-square"></i>
+                      <span>Login with Facebook</span>
+                    </a>
+                    <a href="#" class="btn btn-primary twitter-btn">
+                      <i class="fa-brands fa-twitter-square"></i>
+                      <span>Login with Twitter</span>
+                    </a>
+                    <a href="#" class="btn btn-primary google-btn">
+                      <i class="fa-brands fa-google-plus-square"></i>
+                      <span>Login with Google</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer text-center">
+              <p>
+                Don't have an account?
+                <a
+                  href="#signupform"
+                  data-bs-target="#signupform"
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                >
+                  Signup Here
+                </a>
+              </p>
+              <p>
+                <a
+                  href="#forgotpassword"
+                  data-bs-target="#forgotpassword"
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                  >Forgot Password ?</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal sigup form -->
+      <div class="modal fade" id="signupform">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">SIGN UP</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="signup-wrap">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6">
+                    <form action="#">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Full Name"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email Address"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Password"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Confirm Password"
+                          required
+                        />
+                      </div>
+                      <div class="form-group checkbox">
+                        <input type="checkbox" required />
+                        <label
+                          >I Agree with
+                          <a href="">Terms and Conditions</a></label
+                        >
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="submit"
+                          value="Sign Up"
+                          class="btn btn-primary signup-btn"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                    <h6 class="gray-text">Login The Quick Way</h6>
+                    <a href="#" class="btn btn-primary facebook-btn"
+                      ><i class="fa-brands fa-facebook-square"></i>
+                      <span>Login with Facebook</span>
+                    </a>
+                    <a href="#" class="btn btn-primary twitter-btn">
+                      <i class="fa-brands fa-twitter-square"></i>
+                      <span>Login with Twitter</span>
+                    </a>
+                    <a href="#" class="btn btn-primary google-btn">
+                      <i class="fa-brands fa-google-plus-square"></i>
+                      <span>Login with Google</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer text-center">
+              <p>
+                Already got an account?
+                <a
+                  href="loginform"
+                  data-bs-target="#loginform"
+                  data-bs-toggle="modal"
+                  >Login Here</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Forgot Password -->
+      <div class="modal fade" id="forgotpassword">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Password Recovery
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="forgotpassword-wrap">
+                <div class="row">
+                  <div class="col-md-12">
+                    <form action="#">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Your Email Address*"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="submit"
+                          value="Reset My Password"
+                          class="btn btn-primary reset-btn"
+                        />
+                      </div>
+                      <div class="gray-text text-center">
+                        <p>
+                          For security reasons we don't store your password.
+                          Your password will be reset and a new one will be
+                          send.
+                        </p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer text-center">
+              <p>
+                <a
+                  href="loginform"
+                  data-bs-target="#loginform"
+                  data-bs-toggle="modal"
+                  ><i class="fa-solid fa-angle-left"></i>
+                  <i class="fa-solid fa-angle-left"></i>
+                  Back to login</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom  js-->
+    <script src="./javascript/main.js"></script>
+    <script src="./javascript/priceRange.js"></script>
+    <script src="./javascript/switcher.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/b81af1a42d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- carousel 2 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./javascript/carousel.js"></script>
+    <script src="./javascript/sticky.js"></script>
+  </body>
+</html>
